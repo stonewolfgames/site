@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - ECOS | LoneWolf Game Studio</title>
+    
+    <!-- Importação do Google Fonts: Playpen Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Link para a folha de estilos CSS externa compartiilhado -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal com Logomarca do Estúdio e Navegação -->
+    <header>
+        <div class="logo">
+            <h1>LoneWolf Game Studio</h1>
+            <img src="../images/Guara_RSagana_Logo.png" alt="Guará Logo" class="loboLogo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="press.html">Press Release</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <!-- Conteúdo Principal da Página -->
+    <main>
+        <!-- Hero Section do Contato -->
+        <article class="hero">
+            <!-- <h2 class="hero-title">ECOS</h2> -->
+            <img src="../images/LogoEcos.png" alt="Logo Ecos Game">
+            <h3 class="hero-subtitle">Fale Conosco</h3>
+            <p class="hero-text">
+                Dúvidas, sugestões, deseja conversar conosco ou colaborar com a LoneWolf Game Studio? 
+                Envie sua mensagem abaixo! Ficaremos felizes em responder!
+            </p>
+        </article>
+
+        <!-- Seção do Formulário de Contato e Informações Diretas -->
+        <section class="info-section">
+            <article class="form-article">
+                <h2>Envie sua mensagem preenchendo os campos abaixo:</h2>
+                
+                <!-- Estrutura do Formulário Semântico (Capítulo 11) -->
+                <form id="contato" name="contato" action="" method="post">
+                    
+                    <!-- Agrupamento 1: Dados de identificação-->
+                    <fieldset>
+                        <legend>Dados de Identificação</legend>
+                        
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: Fulano de Tal" required autofocus>
+                        
+                        <label for="email">E-mail de Contato:</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Ex: seuemail@email.com" required>
+                        
+                        <label for="telefone">Telefone / WhatsApp:</label>
+                        <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="Ex: (11) 99999-9999">
+                    </fieldset>
+
+                    <!-- Agrupamento 2: Perfil -->
+                    <fieldset>
+                        <legend>Perfil - Nos fale um pouquinho sobre vc</legend>
+                        <p class="pergunta">Qual é o seu perfil?</p>
+                        
+                        <div class="options-group">
+                            <input type="radio" name="perfil" id="perfil_jogador" value="jogador" checked>
+                            <label for="perfil_jogador">Jogador / Fã</label>
+                            
+                            <input type="radio" name="perfil" id="perfil_imprensa" value="imprensa">
+                            <label for="perfil_imprensa">Imprensa / Criador de Conteúdo</label>
+                            
+                            <input type="radio" name="perfil" id="perfil_investidor" value="investidor">
+                            <label for="perfil_investidor">Investidor / Parceiro</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- Agrupamento 3: Conteúdo -->
+                    <fieldset>
+                        <legend>Detalhamento da Mensagem</legend>
+                        
+                        <label for="assunto">Assunto Principal:</label>
+                        <select id="assunto" name="assunto" class="form-control" required>
+                            <option value="">Selecione uma opção...</option>
+                            <option value="duvida">Dúvida sobre o jogo ECOS</option>
+                            <option value="imprensa">Solicitação de Press Kit / Entrevista</option>
+                            <option value="parceria">Proposta de Parceria / Investimento</option>
+                            <option value="bug">Reportar erro / Feedback</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                        
+                        <label for="mensagem">Sua Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Escreva sua mensagem com detalhes..." required></textarea>
+                    </fieldset>
+
+                    <!-- Botões de Ação do Formulário -->
+                    <fieldset class="btn-container">
+                        <button type="reset" id="limpar" class="btn-reset">Limpar Dados</button>
+                        <button type="submit" id="enviar" class="btn-submit">Enviar Mensagem</button>
+                    </fieldset>
+
+                </form>
+            </article>
+
+            <!-- Sidebar Lateral com Atendimento Direto e Redes -->
+            <aside class="studio-aside">
+                <h2>Canais Diretos</h2>
+                <p><strong>E-mail Geral:</strong> <a href="mailto:stonewolfgamestudio@gmail.com" style="color: goldenrod;">contato@lonewolf.com</a></p>
+                <p><strong>Imprensa:</strong> <a href="mailto:stonewolfgamestudio@gmail.com" style="color: goldenrod;">press@lonewolf.com</a></p>
+                <p><strong>Localização:</strong> São Paulo - SP, Brasil</p>
+                <br>
+                <h2>Redes Sociais</h2>
+                <p>• Instagram: @LoneWolfStudio - Em construção</p>
+                <p>• Youtube: @LoneWolfGames - Em construção</p>
+                <p>• Discord: Comunidade ECOS - Em construção</p>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Rodapé (Padrão) -->
+    <footer>
+        <p>&copy; 2026 LoneWolf Game Studio. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
